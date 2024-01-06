@@ -1,0 +1,1 @@
+k8master ansible_host=192.168.1.2 ansible_ssh_pass=root123 ansible_user=root ansible_ssh_port=22
