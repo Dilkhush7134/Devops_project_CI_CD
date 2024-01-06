@@ -8,6 +8,6 @@ spec:
   - name: tcp
     port: 80
     targetPort: 80
-    nodePort: 32500
+    nodePort: 32400
  selector:
    abc: def
