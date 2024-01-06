@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: mypod
   labels:
-    abc: xyz
+    abc: def
 spec:
   containers:
     - name: mynginxcontainer
