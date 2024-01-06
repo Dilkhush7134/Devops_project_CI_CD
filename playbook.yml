@@ -5,8 +5,8 @@
   tasks:
     - name: Pushing index.html file into Docker server
       copy:
-        src: /tmp/project1/index.html
-        dest: /tmp/project1/index.html
+        src: /tmp/project1/index.nginx-debian.html
+        dest: /tmp/project1/index.nginx-debian.html
     - name: Pushing Dockerfile into Docker server
       copy:
         src: /tmp/project1/Dockerfile
