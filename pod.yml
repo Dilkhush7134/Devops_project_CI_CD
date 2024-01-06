@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
     - name: mynginxcontainer
-      image: mynginxproject:v1
+      image: dilkhush7134/projectme:v1
