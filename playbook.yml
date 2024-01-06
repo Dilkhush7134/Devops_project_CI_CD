@@ -1,0 +1,25 @@
+---
+- name: Project in Progress
+  hosts: Docker
+  become: yes
+  tasks:
+    - name: Pushing index.html file into Docker server
+      copy:
+        src: /tmp/project1/index.html
+        dest: /tmp/project1/index.html
+    - name: Pushing Dockerfile into Docker server
+      copy:
+        src: /tmp/project1/Dockerfile
+        dest: /tmp/project1/Dockerfile
+    - name: Pushing Scripting file into Docker server
+      copy:
+        src: /tmp/project1/myscript.sh
+        dest: /tmp/project1/myscript.sh
+    - name: Set permissions for the second destination file
+      file:
+        path: /tmp/project1/myscript.sh
+        mode: '0777'
+      become: yes
+    - name: Executing Dockerfile on Docker server
+      shell: /tmp/project1/myscript.sh
+      become: yes
