@@ -1,7 +1,6 @@
 FROM ubuntu
 RUN apt-get update -y
 RUN apt-get install nginx -y
-WORKDIR /usr/share/nginx/html/
-COPY /tmp/project1/index.html .
+COPY index.html /usr/share/nginx/html/
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
