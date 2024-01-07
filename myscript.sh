@@ -1,10 +1,10 @@
 #!/bin/bash
 cd /tmp/project1
-docker build -t projectos . &
+docker build -t projectone . &
 wait
 docker images
-docker tag projectos dilkhush7134/projectme:v1
+docker tag projectone dilkhush7134/projecton:v2
 docker login &
 wait
-docker push dilkhush7134/projectme:v1
+docker push dilkhush7134/projecton:v2
 docker images
