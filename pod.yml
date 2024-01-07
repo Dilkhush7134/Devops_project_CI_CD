@@ -7,4 +7,4 @@ metadata:
 spec:
   containers:
     - name: mynginxcontainer
-      image: dilkhush7134/projectme:v1
+      image: dilkhush7134/projecton:v2
